@@ -54,19 +54,21 @@
 	<div id="exercicio_03">
 		<h3>Exercício 03</h3>
 			<p>
-				Entrar com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e tiver menos que 25 anos, imprimir nome e a a mensagem: ACEITA. Caso contrário, imprimir nome e a mensagem: NÃO ACEITA.
+				Entrar com nome, genero e idade de uma pessoa. Se a pessoa for do genero feminino e tiver menos que 25 anos, imprimir nome e a a mensagem: ACEITA. Caso contrário, imprimir nome e a mensagem: NÃO ACEITA.
 			</p>
 			<form action="script.php" method="POST">
-				Nome: <input type="Text" name="nome"><br>
-				Idade: <input ype="number" name="idade"><br>
-				<input type="radio" name="sexo"
-				<?php if (isset($gender) && $gender=="female") echo "checked";?> value="Feminino">Feminino
-				<input type="radio" name="sexo"
+				Nome: <input type="Text" name="nome" size="auto"><br><br>
+				Idade: <input ype="number" name="idade" size="5%"><br><br>
+				<input type="radio" name="genero"
+				<?php if (isset($gender) && $gender=="feminino") echo "checked";?> value="feminino">Feminino
+				<input type="radio" name="genero"
 				<?php if (isset($gender) && $gender=="masculino") echo "checked";?>
 				value="masculino">Masculino
-				<input type="radio" name="sexo"
+				<input type="radio" name="genero"
 				<?php if (isset($gender) && $gender=="outro") echo "checked";?>
-				value="outro">Outro
+				value="outro">Outro<br>
+				<br><input type="submit" name="btn_ex3" value="Validar">
+
 			</form>
 
 	</div>

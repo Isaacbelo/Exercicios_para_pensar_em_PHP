@@ -32,6 +32,17 @@
 		}
 	}
 	//Script do Exercício 03
+	if(isset($_POST["btn_exe3"])) {
+		$nome = $_POST["nome"];
+		$idade = $_POST["idade"];
+		$genero = $_POST["genero"];
+
+		if($genero == "feminino" and $idade < 25) {
+			echo "Aceita!";
+		} else {
+			echo "Não Aceita!";
+		}
+	}
 
 
 
